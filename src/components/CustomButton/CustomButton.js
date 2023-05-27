@@ -36,11 +36,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#3B71F3',
   },
   container_TERTIARY: {},
+  container_SECONDARY: {
+    borderColor: '#3B71F3',
+    borderWidth: 2,
+  },
   text: {
     fontWeight: 'bold',
   },
   text_PRIMARY: {
     color: 'white',
+  },
+  text_SECONDARY: {
+    color: '#3B71F3',
   },
   text_TERTIARY: {},
 });

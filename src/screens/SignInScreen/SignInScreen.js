@@ -9,19 +9,21 @@ import {
 import Logo from '../../../assets/images/slack.png';
 import CustomInput from '../../components/CustomInput/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
+import {useNavigation} from '@react-navigation/native';
 
 const SignInScreen = () => {
   const [username, setUsername] = React.useState('');
   const [password, setPassword] = React.useState('');
 
   const {height} = useWindowDimensions();
+  const navigation = useNavigation();
 
   const onSignInPressed = () => {
-    console.warn('Sign in button pressed');
+    navigation.navigate('Home');
   };
 
   const onForgetPasswordPressed = () => {
-    console.warn('Forget password button pressed');
+    navigation.navigate('ForgetPassword');
   };
 
   const onSignInWithFacebook = () => {
@@ -37,7 +39,7 @@ const SignInScreen = () => {
   };
 
   const onSignUpPressed = () => {
-    console.warn('Sign up button pressed');
+    navigation.navigate('SignUp');
   };
 
   return (
